@@ -1,0 +1,27 @@
+/* General Styling */
+body{
+    background: #352f5b;
+}
+.container{
+    max-width: 400px;
+    border: 2px solid #423A6F;
+    border-radius: 10px;
+}
+
+/* Input styling */
+input[type="number"],
+input[type="number"]:focus,
+#service{
+	color: #fff;
+	border: none;
+	background: rgba(0,0,0,.2);
+	max-width: 400px;
+}
+
+.tip-calculator-content, .btn{
+    background: #423A6F;
+}
+
+.input-group-text{
+    background: rgba(0,0,0,.2) !important;
+}
