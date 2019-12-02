@@ -25,3 +25,8 @@ input[type="number"]:focus,
 .input-group-text{
     background: rgba(0,0,0,.2) !important;
 }
+
+/* change the cursor of disabled button */
+button:disabled{
+    cursor: not-allowed;
+}
