@@ -14,7 +14,7 @@ input[type="number"]:focus,
 #service{
 	color: #fff;
 	border: none;
-	background: rgba(0,0,0,.2);
+	background: #423A6F;
 	max-width: 400px;
 }
 
