@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,56 +13,60 @@
     <!-- app js file -->
     <script src="./js/app.js" defer></script>
 </head>
+
 <body>
     <section class="container p-3 mt-5 text-white">
-       <!-- Tip calculator section -->
-                <section class="tip-calculator mt-4">
-                    <div class="text-white text-center tip-calculator-content rounded p-3 font-weight-bold">
-                        Tip Calculator
-                    </div>
-                    <form  id="form" class="mt-5">
-                        <!-- bill amount group -->
-                        <div class="form-group">
-                            <label for="bill">How much was your bill?</label>
-                            <div class="input-group">
-                                    <div class="input-group-append ">
-                                            <span class="input-group-text text-white border-0" id="dollar-sign">$</span>
-                                        </div>
-                                <input class="form-control" type="number" id="bill-Amount" step='.01' name="bill" placeholder="Enter bill amount" required/>
+        <!-- Tip calculator section -->
+        <section class="tip-calculator mt-4">
+            <div class="text-white text-center tip-calculator-content rounded p-3 font-weight-bold">
+                Tip Calculator
+            </div>
+            <form id="form" class="mt-5">
+                <!-- bill amount group -->
+                <div class="form-group">
+                    <label for="bill">How much was your bill?</label>
+                    <div class="input-group">
+                        <div class="input-group-append ">
+                            <span class="input-group-text text-white border-0" id="dollar-sign">$</span>
+                        </div>
+                        <input class="form-control" type="number" id="bill-Amount" step='.01' name="bill"
+                            placeholder="Enter bill amount" />
 
-                            </div>
+                    </div>
+                </div>
+                <!-- Service RAting Group -->
+                <div class="form-group">
+                    <label for="service">How was your Service?</label>
+                    <select id="service" class="form-control" name="service">
+                        <option value=".05">Terrible - 5%</option>
+                        <option value=".1">Bad - 10%</option>
+                        <option value=".15">OK - 15%</option>
+                        <option value=".2">Good - 20%</option>
+                        <option value=".3">Outstanding - 30%</option>
+                    </select>
+                </div>
+                <!-- People Number group -->
+                <div class="form-group">
+                    <label for="people">How many people are sharing the bill?</label>
+                    <div class="input-group">
+                        <input class="form-control" type="number" name="people" id="people" />
+                        <div class="input-group-append">
+                            <span class="input-group-text text-white border-0">People</span>
                         </div>
-                        <!-- Service RAting Group -->
-                        <div class="form-group">
-                            <label for="service">How was your Service?</label>
-                            <select id="service" class="form-control" name="service">
-                                <option value=".05">Terrible - 5%</option>
-                                <option value=".1">Bad - 10%</option>
-                                <option value=".15">OK - 15%</option>
-                                <option value=".2">Good - 20%</option>
-                                <option value=".3">Outstanding - 30%</option>
-                            </select>
-                        </div>
-                        <!-- People Number group -->
-                        <div class="form-group">
-                            <label for="people">How many people are sharing the bill?</label>
-                            <div class="input-group">
-                                <input class="form-control" type="number" name="people" id="people" required/>
-                                <div class="input-group-append">
-                                    <span class="input-group-text text-white border-0" >People</span>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Submit and calculate Button -->
-                        <div class="form-group text-center mt-4">
-                            <button type="submit" class="btn text-white p-3 font-weight-bold" id="calculate">CALCULATE!</button>
-                        </div>
-                    </form>
-                </section>
-                <!-- Result of tip calculation Section -->
-                <section class="result text-center">
-                    
-                </section>
+                    </div>
+                </div>
+                <!-- Submit and calculate Button -->
+                <div class="form-group text-center mt-4">
+                    <button type="submit" class="btn text-white p-3 font-weight-bold" id="calculate">CALCULATE!</button>
+                    <button type="button" class="btn text-white p-3 ml-3 font-weight-bold"
+                        id="reset-button">RESET!</button>
+                </div>
+            </form>
+        </section>
+        <!-- Result of tip calculation Section -->
+        <section class="result text-center">
+
+        </section>
     </section>
 
 </body>
