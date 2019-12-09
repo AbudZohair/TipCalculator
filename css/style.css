@@ -30,3 +30,10 @@ input[type="number"]:focus,
 button:disabled{
     cursor: not-allowed;
 }
+.btn:not([id="calc-again"]){
+    opacity: .6;
+}
+
+.btn:hover{
+    opacity: 1;
+}
